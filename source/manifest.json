@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Leisure Read",
+    "version": "1.0.0",
+    "description": "Removes the 'X minute read' countdown so you can enjoy articles at your own pace",
+    "short_name": "Leisure Read",
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": ["leisure-read.user.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
